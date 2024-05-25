@@ -237,17 +237,6 @@ class _OctopusToolsController extends AnimationController {
   void show() => forward().ignore();
 
   void hide() => reverse().ignore();
-
-  void toggle() {
-    switch (status) {
-      case AnimationStatus.completed:
-      case AnimationStatus.forward:
-        hide();
-      case AnimationStatus.reverse:
-      case AnimationStatus.dismissed:
-        show();
-    }
-  }
 }
 
 class _OctopusTools$Tabs extends StatelessWidget {
